@@ -18,6 +18,6 @@ class StatusTest < ActiveSupport::TestCase
   	status = Status.new
   	status.content = "Hello"
   	assert !status.save
-  	assert !status.errors[:user_id].empty?
+  	assert !status.errors[:bar_name].empty?
   end	
 end
